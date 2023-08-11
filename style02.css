@@ -1,0 +1,13 @@
+@charset "UTF-8";
+body{
+    background-color: rgb(106, 104, 111);
+}
+a{
+    text-decoration: underline;
+}
+a:hover{
+    color: blue;
+}
+#texto{
+    text-align: justify;
+}

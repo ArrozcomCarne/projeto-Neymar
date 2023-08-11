@@ -1,15 +1,99 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Mono&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Mono&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
 :root{
-    --cor0: #1A1859;
-    --cor1: #0554F2;
-    --cor2: #056CF2;
-    --cor3: #05A64B;
+    --cor0: #1a18596c;
+    --cor1: #0658fc;
+    --cor2: #165bb6;
+    --cor3: #98ffc5ab;
     --cor4: #F2B705;
     --cor5: black;
     --cor6: white;
 
     --font-padrao: 'PT Mono', monospace;
     --font-titulo: 'Merriweather', serif;
+}
+body{
+    font-family: var(--font-padrao);
+    background-color: var(--cor3);
+}
+header{
+    padding-bottom: 40px;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    text-align: center;
+    color: var(--cor4);
+    font-family: var(--font-titulo);
+    font-size: 20px;
+}
+nav p{
+    font-size: 16px;
+}
+nav{
+    background-color: var(--cor2);
+}
+nav a{
+    color: var(--cor4);
+    text-decoration: none;
+    margin-right: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+nav a:hover{
+    background-color: var(--cor1);
+}
+main{
+    margin: auto;
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: var(--cor6);
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main h2{
+    color: var(--cor5);
+    font-family: var(--font-titulo);
+    padding: 20px 20px;
+}
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+}
+main ul{
+    margin: 10px 10px;
+    font-size: 1.2em;
+    line-height: 2em;
+}
+main strong{
+    background-color: var(--cor0);
+    color: var(--cor1);
+}
+main #creditos{
+    font-size: 20px;
+}
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
 }
